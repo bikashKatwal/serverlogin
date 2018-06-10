@@ -5,6 +5,6 @@ app.get('/', (req, res) => {
     res.send({ bye: 'buddy' });
 });
 
-const portnum = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
-app.listen(portnum, ()=>{console.log(`Connecting to port ${portnum}`)});
+app.listen(PORT, ()=>{console.log(`Connecting to port ${PORT}`)});
